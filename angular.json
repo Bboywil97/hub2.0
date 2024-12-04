@@ -109,7 +109,6 @@
       }
     }
   },
-  "defaultProject": "clean-architecture-angular",
   "cli": {
     "analytics": "58c28212-47c8-429d-9391-c857a97e23ff"
   }
