@@ -1,0 +1,39 @@
+.sidenav-container {
+  height: 100%;
+  background-color: #f4f4f4; /* Color de fondo claro */
+  font-family: 'Arial', sans-serif; /* Cambio de fuente */
+}
+
+.sidenav {
+  width: 200px;
+  background-color: #fff; /* Color de fondo oscuro */
+  color: #fff; /* Color de texto blanco */
+  padding: 15px; /* Añadir relleno */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  padding: 10px 0; /* Añadir relleno a la barra de herramientas */
+  font-size: 1.2em; /* Aumentar tamaño de fuente */
+  border-bottom: 1px solid #444; /* Añadir borde inferior */
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.sidenav a {
+  display: block;
+  color: #002fff; /* Color gris claro para los enlaces */
+  padding: 10px 0; /* Añadir relleno a los enlaces */
+  text-decoration: none; /* Eliminar subrayado */
+  transition: color 0.3s, background-color 0.3s; /* Transición suave para efectos hover */
+}
+
+.sidenav a:hover {
+  color: #fff; /* Color blanco al pasar el cursor */
+  background-color: #000000; /* Color de fondo más oscuro al pasar el cursor */
+}
