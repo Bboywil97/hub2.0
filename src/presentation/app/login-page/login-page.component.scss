@@ -1,0 +1,184 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+
+  .navbar {
+    width: 100%;
+    background-color: #610012;
+    padding: 19px 71px;
+    display: flex;
+    justify-content: center;
+
+    .navbar-content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1274px;
+
+      .logo img {
+        height: 70px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 24px;
+
+        a {
+          color: #fff;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19.5px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1240px;
+    width: 100%;
+
+    .image-placeholder {
+      width: 797px;
+      height: 668px;
+      background-color: #ccc;
+    }
+
+    .login-form {
+      width: 444px;
+      background-color: #fff;
+      border: 1px solid #d9d9d9;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .input-field {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          label {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #1e1e1e;
+          }
+
+          input {
+            padding: 12px 16px;
+            border: 1px solid #d9d9d9;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            color: #b3b3b3;
+          }
+        }
+
+        button {
+          padding: 12px;
+          background-color: #2c2c2c;
+          color: #f5f5f5;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+
+      .links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        a {
+          color: #007aff;
+          font-family: 'Inter', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .footer {
+    width: 100%;
+    background-color: #610012;
+    padding: 17px 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1240px;
+      color: #fff;
+
+      .footer-text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 24px;
+
+        .icon {
+          width: 29px;
+          height: 29px;
+          background-color: #a57f2c;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &.facebook {
+            background-image: url('/assets/facebook-icon.svg');
+          }
+
+          &.instagram {
+            background-image: url('/assets/instagram-icon.svg');
+          }
+
+          &.twitter {
+            background-image: url('/assets/twitter-icon.svg');
+          }
+        }
+      }
+    }
+
+    .footer-divider {
+      width: 1220px;
+      height: 1px;
+      background-color: #212529;
+      margin: 10px 0;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1240px;
+      color: #fff;
+
+      a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+      }
+    }
+  }
+}

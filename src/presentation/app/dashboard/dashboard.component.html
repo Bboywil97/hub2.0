@@ -1,0 +1,98 @@
+<div class="dashboard-page">
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-content">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo Secretaría de Economía" />
+      </div>
+      <nav class="nav-links">
+        <a href="#" *ngFor="let link of navLinks">{{link}}</a>
+        <button routerLink="/inventario" class="btn btn-primary">Ir al Inventario</button>
+        <button routerLink="/login" class="btn btn-primary">Ir al Login</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <!-- Side Menu -->
+    <aside class="side-menu">
+      <div class="menu-wrapper">
+        <!-- General Section -->
+        <section class="menu-section">
+          <div class="section-header">GENERAL</div>
+          <div class="menu-separator"></div>
+          <nav class="menu-items">
+            <a *ngFor="let item of menuItems"
+               href="#"
+               class="menu-item"
+               [class.active]="item.active">
+              <div class="item-wrapper">
+                <i class="bi bi-{{item.icon}}"></i>
+                <span class="item-text">{{item.text}}</span>
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <!-- Support Section -->
+        <section class="menu-section">
+          <div class="section-header">SOPORTE</div>
+          <div class="menu-separator"></div>
+          <nav class="menu-items">
+            <a *ngFor="let item of supportItems"
+               href="#"
+               class="menu-item">
+              <div class="item-wrapper">
+                <i class="bi bi-{{item.icon}}"></i>
+                <span class="item-text">{{item.text}}</span>
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <!-- Logout Button -->
+        <button class="logout-button">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Cerrar Sesión</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content">
+      <div class="welcome-section">
+        <h1>Bienvenido {{userName}}</h1>
+        <p>¡Nos alegra verte otra vez!</p>
+      </div>
+
+      <div class="stats-cards">
+        <div class="stat-card">
+          <h2>132</h2>
+          <p>Productos Dados de Alta Recientemente</p>
+        </div>
+        <div class="stat-card">
+          <h2>56</h2>
+          <p>Productos Dados de Baja Recientemente</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-text">Gobierno del Estado de Chiapas</div>
+      <div class="social-icons">
+        <a href="#" class="icon facebook" aria-label="Facebook"></a>
+        <a href="#" class="icon instagram" aria-label="Instagram"></a>
+        <a href="#" class="icon twitter" aria-label="Twitter"></a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-links">
+      <a href="#">Política de Privacidad</a>
+      <a href="#">© 2024 Secretaria de Economia y del Trabajo.</a>
+      <a href="#">Términos y condiciones</a>
+    </div>
+  </footer>
+</div>

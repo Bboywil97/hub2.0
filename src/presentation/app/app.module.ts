@@ -1,22 +1,21 @@
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module'; // Importa el módulo de enrutamiento
 import { AppComponent } from './app.component';
-import { LayoutModule } from '@angular/cdk/layout';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginPageComponent } from './login-page/login-page.component'; // Asegúrate de importar el componente de Login
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
-    DashboardComponent
+    DashboardComponent,
+    LoginPageComponent // Declara el componente de Login
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-
+    AppRoutingModule // Asegúrate de incluir el módulo de enrutamiento
   ],
   providers: [],
-  bootstrap: [AppComponent],
-
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
